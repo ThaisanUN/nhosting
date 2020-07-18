@@ -1,8 +1,16 @@
 
 @extends('layouts.app')
-
+@section('title', '404')
 @section('content')
-
+<style>
+.header__menu ul li.active_pages a:after{
+    opacity: 1;
+	height: 50%;
+}
+/* .active_blog{
+    background: #4c57d6;
+} */
+</style>
  
 
     <!-- Breadcrumb Begin -->

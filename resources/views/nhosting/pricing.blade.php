@@ -1,7 +1,15 @@
 @extends('layouts.app')
-
+@section('title', 'PRICING')
 @section('content')
-
+<style>
+.header__menu ul li.active_pages a:after{
+    opacity: 1;
+	height: 50%;
+}
+/* .active_blog{
+    background: #4c57d6;
+} */
+</style>
 <body>
     <!-- Breadcrumb Begin -->
     <div class="breadcrumb-section">

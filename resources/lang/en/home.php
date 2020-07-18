@@ -1,0 +1,26 @@
+<?php
+return[
+                    'home'=>'Home',
+                    'about'=>'About',
+                    'hosting'=>'Hosting',
+                    'pages'=>'Pages',
+                    'news'=>'News',
+                    'contact'=>'Contact',
+                    'live_chat'=>'Live Chat',
+                    'login'=>'Login',
+                    'register'=>'Register',
+                    'company'=>'Company',
+                    'web_hosting_plan_perfect_for_you'=>'Web Hosting Plan Perfect For You!',
+                    'welcome_to_nhosting'=>'Welcome to Nhosting',
+                    'domains'=>'Domains',
+                    'server'=>'Server',
+                    'installs'=>'Installs',
+                    'server'=>'Server',
+                    'clients'=>' Clients',
+                    // 'server'=>'Server',
+                    // 'server'=>'Server',
+                    // 'server'=>'Server',
+                    // 'server'=>'Server',
+                    // 'server'=>'Server',
+
+];

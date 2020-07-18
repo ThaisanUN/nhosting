@@ -2,7 +2,15 @@
 @extends('layouts.app')
 
 @section('content')
-
+<style>
+.header__menu ul li.active_contact a:after{
+    opacity: 1;
+	height: 50%;
+}
+/* .active_blog{
+    background: #4c57d6;
+} */
+</style>
 <body>
    
 
@@ -12,7 +20,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb__option">
-                        <a href="./index.html"><span class="fa fa-home"></span> Home</a>
+                        <a href="{{url('/')}}"><span class="fa fa-home"></span> Home</a>
                         <span>Contact</span>
                     </div>
                 </div>
@@ -34,17 +42,18 @@
                             <li>
                                 <span class="fa fa-map-marker"></span>
                                 <h5>Address</h5>
-                                <p>160 Pennsylvania Ave NW, Washington Castle, PA 16101-5161</p>
+                                <p>#39; St. CKD10, Khan Dangkor, <br />
+                                Phnom Penh, Kingdom of Cambodia.</p>
                             </li>
                             <li>
                                 <span class="fa fa-mobile"></span>
                                 <h5>Address</h5>
-                                <p>125-711-811 | 125-668-886</p>
+                                <p>+855 34 33 03 | 96 73 62 510</p>
                             </li>
                             <li>
                                 <span class="fa fa-headphones"></span>
                                 <h5>Address</h5>
-                                <p>Support.photography@gmail.com</p>
+                                <p>nhosting@gmail.com</p>
                             </li>
                         </ul>
                         <div class="contact__social">
@@ -57,9 +66,10 @@
                 </div>
                 <div class="col-lg-8">
                     <div class="map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20151.047591375514!2d-0.5735782106784704!3d50.85188881113048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875a4d10c96d8bf%3A0xe9a76e70e6b7cc5a!2sArundel%2C%20UK!5e0!3m2!1sen!2sbd!4v1584862449435!5m2!1sen!2sbd"
-                            height="515" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.648188564749!2d104.86884631412212!3d11.505282248464544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDMwJzE5LjAiTiAxMDTCsDUyJzE1LjciRQ!5e0!3m2!1sen!2skh!4v1594138108330!5m2!1sen!2skh" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <!-- <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.648188564749!2d104.86884631412212!3d11.505282248464544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDMwJzE5LjAiTiAxMDTCsDUyJzE1LjciRQ!5e0!3m2!1sen!2skh!4v1594138108330!5m2!1sen!2skh"
+                            height="515" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
                     </div>
                 </div>
             </div>

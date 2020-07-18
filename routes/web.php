@@ -27,3 +27,9 @@ Route::get('/about', 'NhostingController@about')->name('about');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('locale/{locale}',function($locale){
+                    Session::put('locale',$locale);
+                    return redirect()->back();
+});

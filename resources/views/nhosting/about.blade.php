@@ -1,16 +1,24 @@
 @extends('layouts.app')
-
+@section('title', 'ABOUT')
 @section('content')
 
-
+<style>
+.header__menu ul li.active_about a:after{
+    opacity: 1;
+	height: 50%;
+}
+/* .active_blog{
+    background: #4c57d6;
+} */
+</style>
     <!-- Breadcrumb Begin -->
     <div class="breadcrumb-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb__option">
-                        <a href="./index.html"><span class="fa fa-home"></span> Home</a>
-                        <span>About</span>
+                        <a href="./index.html"><span class="fa fa-home"></span>@lang('home.home')</a>
+                        <span>@lang('home.about')</span>
                     </div>
                 </div>
             </div>
@@ -29,7 +37,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="about__text">
-                        <h2>Welcom to Deerhost</h2>
+                        <h2>@lang('home.welcome_to_nhosting')</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
                             viverra maecenas accumsan lacus vel facilisis.</p>
@@ -37,22 +45,22 @@
                             <div class="about__achieve__item">
                                 <span class="fa fa-user-o"></span>
                                 <h4 class="achieve-counter">2468</h4>
-                                <p>Clients</p>
+                                <p>@lang('home.clients')</p>
                             </div>
                             <div class="about__achieve__item">
                                 <span class="fa fa-edit"></span>
                                 <h4 class="achieve-counter">2468</h4>
-                                <p>Domains</p>
+                                <p>@lang('home.domains')</p>
                             </div>
                             <div class="about__achieve__item">
                                 <span class="fa fa-clone"></span>
                                 <h4 class="achieve-counter">2468</h4>
-                                <p>Server</p>
+                                <p>@lang('home.server')</p>
                             </div>
                             <div class="about__achieve__item">
                                 <span class="fa fa-cog"></span>
                                 <h4 class="achieve-counter">2468</h4>
-                                <p>Installs</p>
+                                <p>@lang('home.installs')</p>
                             </div>
                         </div>
                         <a href="#" class="primary-btn">Get started now</a>

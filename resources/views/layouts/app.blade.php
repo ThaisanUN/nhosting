@@ -6,9 +6,9 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
+    <link rel="icon" href="{{ url('/img/icon.jpg') }}" type="image/x-icon"/>
     <!-- <title>{{ config('app.name', 'Laravel') }}</title> -->
-    <title>@yield('title','This is default title.')</title>
+    <title>@yield('title','NHOSTING.')</title>
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap"
         rel="stylesheet">
@@ -24,18 +24,19 @@
 </head>
 <body>
 
-    <!-- <div id="app"> -->
+    <div id="app">
         <!-- <nav class="navbar navbar-expand-md navbar-light bg-white "> -->
             <!-- <div class="container"> -->
+            
             @include('inc.bar')
-            <!-- <main class="py-4"> -->
-            @yield('content')
-            <!-- </main> -->
+            <div id="app_load">
+              @yield('content')
+            </div>
             @include('inc.footer')
             <!-- </div> -->
         <!-- </nav> -->
         
-    <!-- </div> -->
+    </div>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!-- [if lt IE 9]>
@@ -44,15 +45,30 @@
 <![endif] -->
 <!-- Javascript Files
 ================================================== --> 
-   
-
-</body>
-  <!-- Js Plugins -->
+   <!-- Js Plugins -->
   <script src="{{('js/jquery-3.3.1.min.js')}}"></script>
     <script src="{{('js/bootstrap.min.js')}}"></script>
     <script src="{{('js/jquery.slicknav.js')}}"></script>
     <script src="{{('js/owl.carousel.min.js')}}"></script>
     <script src="{{('js/main.js')}}"></script>
+  <script src="{{('js/load.js')}}"></script>
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+                    // initial
+                    // return false;
+                    // $('#app_load').load('{{url("/")}}');`
+                    $('#app_load').atler("hello");
+                    return false;
 
-  <script src="{{('js/main.js')}}"></script>
+                    $('ul#navaaa li.active_home a').click(function() {
+                      var page = $this.attr('href');
+                            console.log(page);
+                            // $('#app_load').load('{{url("/index")}}');
+                            return false;
+                    })
+});
+  </script>
+</body>
+  
 </html>

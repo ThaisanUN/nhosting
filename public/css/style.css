@@ -484,6 +484,7 @@ ol {
 
 .hero__slider.owl-carousel .owl-dots button.active {
 	background: #4c57d6;
+	/* background:#120851; */
 }
 
 .hero__slider.owl-carousel .owl-dots button:last-child {

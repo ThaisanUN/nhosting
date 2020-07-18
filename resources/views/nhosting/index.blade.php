@@ -1,7 +1,16 @@
 
 @extends('layouts.app')
-
+@section('title', 'HOME')
 @section('content')
+<style>
+.header__menu ul li.active_home a:after{
+    opacity: 1;
+	height: 50%;
+}
+/* .active_blog{
+    background: #4c57d6;
+} */
+</style>
 <body>
     <!-- Hero Section Begin -->
     <section class="hero-section">

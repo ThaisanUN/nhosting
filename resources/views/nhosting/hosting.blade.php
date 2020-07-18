@@ -1,7 +1,16 @@
 
 @extends('layouts.app')
-
+@section('title', 'HOSTING')
 @section('content')
+<style>
+.header__menu ul li.active_hosting a:after{
+    opacity: 1;
+	height: 50%;
+}
+/* .active_blog{
+    background: #4c57d6;
+} */
+</style>
 <body>
     
 
@@ -26,7 +35,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h3>WEB HOSTING PLAN PERFECT FOR YOU!</h3>
+                        <h3>@lang('home.web_hosting_plan_perfect_for_you')</h3>
                     </div>
                     <div class="hosting__text">
                         <ul class="nav nav-tabs" role="tablist">
@@ -77,7 +86,7 @@
                                                     <div class="hosting__feature--plan">
                                                         <div class="plan__title">Started</div>
                                                         <div class="hosting__feature--price">
-                                                            <div class="plan__price">$3.90</div>
+                                                            <div class="plan__price">$900000</div>
                                                             <span>month</span>
                                                         </div>
                                                         <a href="#" class="primary-btn">Buy now</a>
@@ -276,10 +285,11 @@
                                                     </div>
                                                 </th>
                                                 <th>
+                                                    <a href="#tags-3"></a>
                                                     <div class="hosting__feature--plan">
                                                         <div class="plan__title">Started</div>
                                                         <div class="hosting__feature--price">
-                                                            <div class="plan__price">$3.90</div>
+                                                            <div class="plan__price">$3.95</div>
                                                             <span>month</span>
                                                         </div>
                                                         <a href="#" class="primary-btn">Buy now</a>
@@ -472,7 +482,7 @@
                                                     <div class="hosting__feature--plan">
                                                         <div class="plan__title">Started</div>
                                                         <div class="hosting__feature--price">
-                                                            <div class="plan__price">$3.90</div>
+                                                            <div class="plan__price">$3.98</div>
                                                             <span>month</span>
                                                         </div>
                                                         <a href="#" class="primary-btn">Buy now</a>

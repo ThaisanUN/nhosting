@@ -42,7 +42,7 @@
                         <div class="footer__text-widget">
                             <h5>Company</h5>
                             <ul>
-                                <li><a href="#">Company</a></li>
+                                <li><a href="#">@lang('home.company')</a></li>
                                 <li><a href="#">About Us</a></li>
                                 <li><a href="#">Press & Media</a></li>
                                 <li><a href="#">News / Blogs</a></li>
@@ -75,9 +75,8 @@
                     </div>
                 </div>
                 <div class="footer__text-copyright" style= "text-color:blude;">
-                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  <!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://nhostingserver.com" target="_blank">Nhosting</a>
+  Link back to Nhosting can't be removed.
                 </div>
             </div>
         </div>
